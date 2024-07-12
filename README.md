@@ -9,3 +9,6 @@ mysecretpassword — пароль
 
 # команда для докера
 $ docker run --name my_postgres_db -e POSTGRES_PASSWORD=mysecretpassword -d -p 5434:5432 postgres
+
+docker run --name my_postgres_db -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=mydatabase -d -p 5434:5432 postgres
+
